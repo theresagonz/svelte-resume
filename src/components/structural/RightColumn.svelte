@@ -2,14 +2,17 @@
   import Section from '../shared/Section.svelte';
 	export const sections = [
 		{
+      type: 'contact',
       label: 'Contact',
-      items: [],
+      items: [{ phone: '555-555-5555'}]
     },
     {
+      type: 'skills',
       label: 'Skills',
-      items: [],
+      items: ['bowhunting', 'air fishing'],
 		},
 		{
+      type: 'primary',
 			label: 'Projects',
 			items: [
 				{
@@ -22,7 +25,7 @@
           title: 'Newsmash',
           link: 'http://newsmashed.herokuapp.com',
 					subtitle: 'A different way to visualize the news',
-          description: 'React, Redux, PostgreSQL, Ruby on Rails, external APIs',
+          description: 'React, Redux, PostgreSQL, Ruby on Rails',
 				},
 			],
 		},
@@ -30,8 +33,8 @@
 </script>
 
 <div id="right-column">
-	{#each sections as { label, items }}
-	  <Section {label} {items}></Section>
+	{#each sections as { label, items, type }}
+	  <Section {label} {items} {type}></Section>
 	{/each}
 </div>
 
