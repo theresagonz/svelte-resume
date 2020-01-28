@@ -1,14 +1,14 @@
 <script>
-  import Section from '../shared/Section.svelte';
+  import Section from './Section.svelte';
 
 	export const sections = [
 		{
       type: 'primary',
       label: 'Work Experience',
-			items: [
+			details: [
 				{
-					title: 'The Wally Shop',
-					subtitle: 'Contract Full Stack Developer',
+					title: 'Contract Full Stack Developer',
+					subtitle: 'The Wally Shop',
 					dates: `4/2019 — ongoing`,
 					location: 'Remote',
 					description: 'Packaging-free grocery delivery service',
@@ -19,8 +19,8 @@
 					],
 				},
 				{
-					title: 'Sixcycle',
-					subtitle: 'Front End Developer',
+					title: 'Front End Developer',
+					subtitle: 'Sixcycle',
 					dates: '4/2019 — 10/2019',
 					location: 'Brooklyn, NY',
 					description:
@@ -32,8 +32,8 @@
 					],
 				},
 				{
-					title: 'Denver Public Schools',
-					subtitle: 'Math Fellow, Americorps',
+					title: 'Math Fellow, Americorps',
+					subtitle: 'Denver Public Schools',
 					dates: '8/2017 — 6/2018',
 					location: 'Denver, CO',
 					description: 'Middle school math intervention teacher',
@@ -48,7 +48,7 @@
 		{
 			type: 'primary',
 			label: 'Education',
-			items: [
+			details: [
 				{
 					title: 'Online Software Engineering Program',
 					subtitle: 'Flatiron School',
@@ -67,8 +67,8 @@
 </script>
 
 <div id="left-column">
-	{#each sections as { label, items, type }}
-    <Section {label} {items} {type}></Section>
+	{#each sections as { label, details, type }}
+    <Section {label} {details} {type}></Section>
 	{/each}
 </div>
 

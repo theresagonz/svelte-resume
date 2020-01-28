@@ -3,4 +3,6 @@
 </script>
 
 <div id="skills-section">
-  <div></div>{items}</div>
+	<div />
+	{items}
+</div>

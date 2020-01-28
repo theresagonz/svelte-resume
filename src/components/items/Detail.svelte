@@ -14,7 +14,9 @@
 			<h3 class="title">{title}</h3>
 			<div class="subtitle">{subtitle}</div>
 			{#if link}
-				<div class="link"><i class="fa fa-link"></i><a href={link}>{link}<a></div>
+				<div class="link">
+					<i class="fa fa-link"></i><a href="{link}">{link}<a>
+				</div>
 			{/if}
 		</div>
 		<div class="top-right">
@@ -22,7 +24,9 @@
 				<div class="dates">{dates}</div>
 			{/if}
 			{#if location}
-				<div class="location"><i class="fa fa-map-marker-alt"></i>{location}</div>
+				<div class="location">
+					<i class="fa fa-map-marker-alt"></i>{location}
+				</div>
 			{/if}
 		</div>
 	</div>
@@ -94,7 +98,7 @@
 	}
 	
 	.description {
-		font-size: 1.05em;
+		font-size: 1em;
 	}
 
 	.list {

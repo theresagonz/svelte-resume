@@ -1,5 +1,5 @@
 <script>
-	export let items;
+	export let details;
 </script>
 
 <style>
@@ -9,7 +9,7 @@
 </style>
 
 <div id="contact-section">
-	{#each items as { phone, email, city, linkedin, web, blog }}
+	{#each details as { phone, email, city, linkedin, web, blog }}
 		{#if email}
 			<div class="item">
 				<i class="fa fa-envelope" />

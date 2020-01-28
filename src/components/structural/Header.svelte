@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	export const name = 'Theresa Morelli';
 	const summary =
 		'Fashion axe farm-to-table vinyl vape. Bushwick artisan unicorn distillery. Helvetica knausgaard vice, selfies viral echo park kale chips 8-bit photo booth neutra 3 wolf moon gochujang venmo small batch tacos farm-to-table poutine tofu typewriter gentrify aesthetic.';
 </script>

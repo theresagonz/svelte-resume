@@ -1,10 +1,10 @@
 <script>
-	import Section from '../shared/Section.svelte';
+	import Section from './Section.svelte';
 	export const sections = [
 		{
 			type: 'contact',
 			label: 'Contact',
-			items: [
+			details: [
 				{
 					email: 'test@gmail.com',
           phone: '555-555-5555',
@@ -18,12 +18,12 @@
 		{
 			type: 'skills',
 			label: 'Skills',
-			items: ['bowhunting', 'air fishing'],
+			details: ['bowhunting', 'air fishing'],
 		},
 		{
 			type: 'primary',
 			label: 'Projects',
-			items: [
+			details: [
 				{
 					title: 'Hello Pizza Truck',
 					link: 'http://hellopizzatruck.com',
@@ -42,8 +42,8 @@
 </script>
 
 <div id="right-column">
-	{#each sections as { label, items, type }}
-	<Section {label} {items} {type}></Section>
+	{#each sections as { label, details, type }}
+	<Section {label} {details} {type}></Section>
 	{/each}
 </div>
 
