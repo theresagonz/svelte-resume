@@ -1,10 +1,11 @@
 <script>
-	export const title;
-	export const subtitle;
-	export const dates;
-	export const location;
-	export const description;
-	export const list;
+	export let title;
+	export let subtitle;
+	export let link;
+	export let dates;
+	export let location;
+	export let description;
+	export let list;
 </script>
 
 <div class="item-container">
@@ -12,24 +13,29 @@
 		<div class="top-left">
 			<h3 class="title">{title}</h3>
 			<div class="subtitle">{subtitle}</div>
+			{#if link}
+				<div class="link"><i class="fa fa-link"></i><a href={link}>{link}<a></div>
+			{/if}
 		</div>
 		<div class="top-right">
 			{#if dates}
-			<div class="dates">{dates}</div>
-			{/if} {#if location}
-			<div class="location"><i class="fa fa-map-marker-alt"></i>{location}</div>
+				<div class="dates">{dates}</div>
+			{/if}
+			{#if location}
+				<div class="location"><i class="fa fa-map-marker-alt"></i>{location}</div>
 			{/if}
 		</div>
 	</div>
 	<div class="bottom">
 		{#if description}
-		<div class="summary">{description}</div>
-		{/if} {#if list}
-		<ul class="list">
-			{#each list as listItem}
-			<li class="list-item">{listItem}</li>
-			{/each}
-		</ul>
+			<div class="description">{description}</div>
+		{/if}
+		{#if list}
+			<ul class="list">
+				{#each list as listItem}
+				<li class="list-item">{listItem}</li>
+				{/each}
+			</ul>
 		{/if}
 	</div>
 </div>
@@ -49,12 +55,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
-		margin-bottom: 0.5em;
+		margin-bottom: 3px;
 	}
 
-	.name {
-		font-size: 1.1em;
-		font-weight: 300;
+	.link {	
+		font-size: 0.9em;
+		color: var(--grey-mid)
 	}
 
 	.title {
@@ -83,13 +89,12 @@
 		padding-top: 3px;
 	}
 
-	.summary {
-		font-size: 1em;
-		font-weight: 400;
-	}
-
 	.bottom {
 		font-size: 0.95em;
+	}
+	
+	.description {
+		font-size: 1.05em;
 	}
 
 	.list {

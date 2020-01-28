@@ -51,7 +51,7 @@
 					subtitle: 'Flatiron School',
 					dates: '2018 — 2019',
 					// location: 'online',
-        },
+				},
 				{
 					title: 'B.S. Chemical Engineering',
 					subtitle: 'Colorado School of Mines',
@@ -63,15 +63,15 @@
 	];
 </script>
 
-<style>
-	#left-column {
-		width: 65%;
-		margin-right: 30px;
-	}
-</style>
-
 <div id="left-column">
 	{#each sections as { label, items }}
 	  <Section {label} {items}></Section>
 	{/each}
 </div>
+
+<style>
+	#left-column {
+		width: 65%;
+		margin-right: 50px;
+	}
+</style>

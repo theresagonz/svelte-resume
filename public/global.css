@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans&display=swap');
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -73,7 +75,8 @@ button:focus {
   --accent-color: #000;
   --accent-font: 'Open Sans', sans-serif;
   --grey-dark: #333;
-	--grey-mid: #545454;
+  --grey-mid: #545454;
+  --grey-light: #717171;
 }
 
 main {
@@ -98,7 +101,7 @@ ul {
 i {
 	padding-right: 7px;
 	font-size: 0.9rem;
-  color: #ababab;
+  color: var(--grey-light);
 }
 
 hr.section-underline {
