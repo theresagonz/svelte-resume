@@ -1,8 +1,7 @@
 <style>
-  #right-column {
-    width: 35%;
-    background-color: lightgrey;
-  }
+	#right-column {
+		width: 35%;
+	}
 </style>
 
 <div id="right-column"></div>
