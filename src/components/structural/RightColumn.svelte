@@ -1,31 +1,40 @@
 <script>
-  import Section from '../shared/Section.svelte';
+	import Section from '../shared/Section.svelte';
 	export const sections = [
 		{
-      type: 'contact',
-      label: 'Contact',
-      items: [{ phone: '555-555-5555'}]
-    },
-    {
-      type: 'skills',
-      label: 'Skills',
-      items: ['bowhunting', 'air fishing'],
+			type: 'contact',
+			label: 'Contact',
+			items: [
+				{
+					email: 'test@gmail.com',
+          phone: '555-555-5555',
+          city: 'Seattle, WA',
+          linkedin: 'linkedin.com/in/theresa-morelli',
+          web: 'theresamorelli.com',
+          blog: 'medium.com/@theresamorelli',
+				},
+			],
 		},
 		{
-      type: 'primary',
+			type: 'skills',
+			label: 'Skills',
+			items: ['bowhunting', 'air fishing'],
+		},
+		{
+			type: 'primary',
 			label: 'Projects',
 			items: [
 				{
-          title: 'Hello Pizza Truck',
-          link: 'http://hellopizzatruck.com',
-          subtitle: 'Marketing website for selling food truck',
+					title: 'Hello Pizza Truck',
+					link: 'http://hellopizzatruck.com',
+					subtitle: 'Marketing website for selling food truck',
 					description: 'Gatsby, React, Slick',
 				},
 				{
-          title: 'Newsmash',
-          link: 'http://newsmashed.herokuapp.com',
+					title: 'Newsmash',
+					link: 'http://newsmashed.herokuapp.com',
 					subtitle: 'A different way to visualize the news',
-          description: 'React, Redux, PostgreSQL, Ruby on Rails',
+					description: 'React, Redux, PostgreSQL, Ruby on Rails',
 				},
 			],
 		},
@@ -34,7 +43,7 @@
 
 <div id="right-column">
 	{#each sections as { label, items, type }}
-	  <Section {label} {items} {type}></Section>
+	<Section {label} {items} {type}></Section>
 	{/each}
 </div>
 
