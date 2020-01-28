@@ -1,8 +1,19 @@
 <script>
-	export let items;
+	import Skill from '../items/Skill.svelte';
+	export let details;
 </script>
 
+<style>
+	#skills-section {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+</style>
+
 <div id="skills-section">
-	<div />
-	{items}
+	{#each details as skill}
+		<Skill {skill} />
+	{/each}
 </div>

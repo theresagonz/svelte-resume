@@ -7,18 +7,34 @@
 			details: [
 				{
 					email: 'test@gmail.com',
-          phone: '555-555-5555',
-          city: 'Seattle, WA',
-          linkedin: 'linkedin.com/in/theresa-morelli',
-          web: 'theresamorelli.com',
-          blog: 'medium.com/@theresamorelli',
+					phone: '555-555-5555',
+					city: 'Seattle, WA',
+					linkedin: 'linkedin.com/in/theresa-morelli',
+					web: 'theresamorelli.com',
+					blog: 'medium.com/@theresamorelli',
 				},
 			],
 		},
 		{
 			type: 'skills',
 			label: 'Skills',
-			details: ['bowhunting', 'air fishing'],
+			details: [
+				'JavaScript',
+				'React',
+				'Redux',
+				'MobX',
+				'jQuery',
+				'PostgreSQL',
+				'MongoDB',
+				'Express',
+				'Node',
+				'Ruby on Rails',
+				'HTML',
+				'CSS5',
+				'Git',
+				'Agile',
+				'Jira',
+			],
 		},
 		{
 			type: 'primary',
@@ -49,6 +65,6 @@
 
 <style>
 	#right-column {
-		width: 35%;
+		width: 34%;
 	}
 </style>
