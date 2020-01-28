@@ -105,18 +105,23 @@ hr.section-underline {
 	margin: 0 0 18px 0;
 }
 
+.section {
+  margin-bottom: 36px;
+}
+
+
 .section-label {
   margin-bottom: 0;
   color: var(--accent-color);
 	font-family: var(--accent-font);
-	font-size: 2em;
+	font-size: 1.9em; 
 	text-transform: uppercase;
 }
 
-.main-head {
+.title {
 	font-size: 1.3em;
 }
 
-.subhead {
+.subtitle {
 	font-weight: 800;
 }
