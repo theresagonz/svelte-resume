@@ -6,6 +6,7 @@
 <style>
 	#skills-section {
 		display: flex;
+		justify-content: var(--center);
 		flex-wrap: wrap;
 		margin: 0 -5px;
 	}
