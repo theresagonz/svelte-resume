@@ -32,5 +32,5 @@
 
 <div id="header">
 	<h1 id="my-name">{name}</h1>
-	<div class="summary">{@html summary}</div>
+	<div class="summary">{summary}</div>
 </div>

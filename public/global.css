@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans&display=swap');
 
+/* MY GLOBAL VARIABLES */
+
+:root {
+  /* --accent-color: #55777c; */
+	--accent-color: #000;
+	--link-color: #55777c;
+  --accent-font: 'Open Sans', sans-serif;
+  --grey-dark: #333;
+  --grey-mid-dark: #545454;
+	--grey-mid: #717171;
+	--grey-light: #d5d5d5;
+}
+
+
+
+/* DEFAULT GLOBAL STYLES */
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -68,16 +85,9 @@ button:focus {
 	border-color: #666;
 }
 
-/* my global styles */
 
-:root {
-  /* --accent-color: #55777c; */
-  --accent-color: #000;
-  --accent-font: 'Open Sans', sans-serif;
-  --grey-dark: #333;
-  --grey-mid: #545454;
-  --grey-light: #717171;
-}
+
+/* MY GLOBAL STYLES */
 
 main {
 	width: 8.5in;
@@ -86,7 +96,7 @@ main {
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: var(--grey-mid);
+	color: var(--grey-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,7 +111,7 @@ ul {
 i {
 	padding-right: 7px;
 	font-size: 0.9rem;
-  color: var(--grey-light);
+  color: var(--grey-mid);
 }
 
 hr.section-underline {
@@ -111,7 +121,6 @@ hr.section-underline {
 .section {
   margin-bottom: 36px;
 }
-
 
 .section-label {
   margin-bottom: 0;
@@ -126,5 +135,6 @@ hr.section-underline {
 }
 
 .subtitle {
+	color: var(--grey-mid-dark);
 	font-weight: 800;
 }

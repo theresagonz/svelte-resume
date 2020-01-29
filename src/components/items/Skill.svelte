@@ -6,7 +6,7 @@
 	.skill {
     border: 1px solid var(--grey-light);
     width: fit-content;
-    padding: 5px 10px;
+    padding: 5px 7px;
     border-radius: 2px;
     margin: 5px;
     color: var(--grey-dark);

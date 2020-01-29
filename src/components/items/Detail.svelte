@@ -8,6 +8,72 @@
 	export let list;
 </script>
 
+<style>
+	.item-container {
+		line-height: 1.4em;
+		margin: 24px 0;
+	}
+
+	.item-container:first-of-type {
+		margin-top: 0;
+	}
+
+	.top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 3px;
+	}
+
+	.link {	
+		font-size: 0.9em;
+		color: var(--grey-mid);
+		margin-top: 3px;
+	}
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+		font-family: var(--accent-font);
+		color: var(--grey-dark);
+	}
+
+	.top-right,
+	.top-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.top-right {
+		align-items: baseline;
+		font-size: 0.9em;
+		color: #000;
+	}
+
+	.location {
+		padding-top: 3px;
+	}
+
+	.bottom {
+		font-size: 0.95em;
+	}
+	
+	.description {
+		font-size: 1em;
+	}
+
+	.list {
+		line-height: 1.3em;
+	}
+
+	.list-item {
+		margin-bottom: 4px;
+	}
+</style>
+
 <div class="item-container">
 	<div class="top">
 		<div class="top-left">
@@ -43,69 +109,3 @@
 		{/if}
 	</div>
 </div>
-
-<style>
-	.item-container {
-		line-height: 1.4em;
-		margin: 28px 0;
-	}
-
-	.item-container:first-of-type {
-		margin-top: 0;
-	}
-
-	.top {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: baseline;
-		margin-bottom: 3px;
-	}
-
-	.link {	
-		font-size: 0.9em;
-		color: var(--grey-mid)
-	}
-
-	.title {
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-		margin-bottom: 6px;
-		font-family: var(--accent-font);
-		color: var(--grey-dark);
-	}
-
-	.top-right,
-	.top-left {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.top-right {
-		align-items: flex-end;
-		font-size: 0.9em;
-		color: #000;
-	}
-
-	.location {
-		padding-top: 3px;
-	}
-
-	.bottom {
-		font-size: 0.95em;
-	}
-	
-	.description {
-		font-size: 1em;
-	}
-
-	.list {
-		line-height: 1.3em;
-	}
-
-	.list-item {
-		margin-bottom: 4px;
-	}
-</style>
