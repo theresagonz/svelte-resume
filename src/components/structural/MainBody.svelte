@@ -39,7 +39,7 @@
       ],
     },
     {
-      type: 'primary',
+      type: 'short-details',
       label: 'Projects',
       details: [
         {
@@ -59,8 +59,8 @@
   ];
   export const largeColumnSections = [
     {
-      type: 'primary',
-      label: 'Experience',
+      type: 'full-details',
+      label: 'Work Experience',
       details: [
         {
           title: 'Contract Full Stack Developer',
@@ -102,14 +102,13 @@
       ],
     },
     {
-      type: 'primary',
+      type: 'full-details',
       label: 'Education',
       details: [
         {
           title: 'Online Software Engineering Program',
           subtitle: 'Flatiron School',
           dates: '2018 — 2019',
-          // location: 'online',
         },
         {
           title: 'B.S. Chemical Engineering',
@@ -126,12 +125,13 @@
   div {
     display: flex;
     justify-content: space-between;
+    /* TOGGLE - for switching column ordering, comment in flex-direction below */
     /* flex-direction: row-reverse; */
     margin: 0 -25px;
   }
 </style>
 
 <div>
-  <SmallColumn sections={smallColumnSections} />
   <LargeColumn sections={largeColumnSections} />
+  <SmallColumn sections={smallColumnSections} />
 </div>

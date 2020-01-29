@@ -1,7 +1,8 @@
 <script>
 	import Contact from '../sections/Contact.svelte';
 	import Skills from '../sections/Skills.svelte';
-	import Details from '../sections/Details.svelte';
+	import FullDetails from '../sections/FullDetails.svelte';
+	import ShortDetails from '../sections/ShortDetails.svelte';
 	export let label;
 	export let details;
 	export let type;
@@ -10,8 +11,10 @@
 <div class="section">
 	<h2 class="section-label">{label}</h2>
 	<hr class="section-underline" />
-	{#if type === 'primary'}
-		<Details {label} {details} />
+	{#if type === 'short-details'}
+		<ShortDetails {label} {details} />
+	{:else if type === 'full-details'}
+		<FullDetails {label} {details} />
 	{:else if type === 'skills'}
 		<Skills {label} {details} />
 	{:else if type === 'contact'}
