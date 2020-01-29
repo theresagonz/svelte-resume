@@ -1,6 +1,6 @@
 <script>
 	import Header from './components/structural/Header.svelte';
-	import Body from './components/structural/Body.svelte';
+	import MainBody from './components/structural/MainBody.svelte';
 </script>
 
 <main>
