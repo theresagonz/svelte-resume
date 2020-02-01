@@ -3,14 +3,14 @@
 	export let sections;
 </script>
 
-<div id="big-column">
+<div id="wide-column">
 	{#each sections as { label, details, type }}
     <Section {label} {details} {type}></Section>
 	{/each}
 </div>
 
 <style>
-	#big-column {
+	#wide-column {
 		width: 65%;
 		margin: 0 var(--horizontal-space-between-columns);
 		display: flex;

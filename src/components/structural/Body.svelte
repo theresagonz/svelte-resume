@@ -1,7 +1,8 @@
 <script>
-	import SmallColumn from './SmallColumn.svelte';
-	import LargeColumn from './LargeColumn.svelte';
-	export const smallColumnSections = [
+	import SideColumn from './SideColumn.svelte';
+	import MainColumn from './MainColumn.svelte';
+
+	export const sideColumn = [
 		{
 			type: 'contact',
 			label: 'Contact',
@@ -76,7 +77,7 @@
 			],
 		},
 		{
-			type: 'short-details',
+			type: 'simple-details',
 			label: 'Projects',
 			details: [
 				{
@@ -94,7 +95,7 @@
 			],
 		},
 	];
-	export const largeColumnSections = [
+	export const mainColumn = [
 		{
 			type: 'full-details',
 			label: 'Experience',
@@ -168,6 +169,6 @@
 </style>
 
 <div class="main-body">
-	<LargeColumn sections={largeColumnSections} />
-	<SmallColumn sections={smallColumnSections} />
+	<MainColumn sections={mainColumn} />
+	<SideColumn sections={sideColumn} />
 </div>
