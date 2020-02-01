@@ -12,7 +12,7 @@
 <style>
 	#big-column {
 		width: 65%;
-		margin: 0 25px;
+		margin: 0 var(--horizontal-space-between-columns);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;

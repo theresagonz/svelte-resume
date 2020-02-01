@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans:300,400,500&display=swap');
 
-/* MY GLOBAL VARIABLES */
+/* MY GLOBAL CSS VARIABLES */
 
 :root {
-  /* --accent-color: #55777c; */
-	--accent-color: #000;
-	--link-color: #55777c;
+	/* ADJUST COLOR */
+	/* --accent-color: #55777c; */
+	--link-color: #000;
   --accent-font: 'Open Sans', sans-serif;
-  --grey-dark: #333;
-  --grey-mid-dark: #545454;
+	--grey-dark: #333;
+	--grey-mid-dark: #545454;
 	--grey-mid: #717171;
 	--grey-light: #d5d5d5;
-	/* TOGGLE - for more centered layout, comment in --center css variable below */
-	/* --center: center; */
+
+	/* ADJUST SPACING */
+	--vertical-space-between-sections: 1.4rem;
+	--vertical-space-between-subsections: 1rem;
+	--horizontal-space-between-columns: 25px;
+	--horizontal-offset: -25px;
+	
+	/* ADJUST APPEARANCE */
+	/* --column-order: row-reverse; */
+	/* --more-centered: center; */
 }
 
 
@@ -26,25 +34,18 @@ html, body {
 }
 
 body {
-	color: #333;
+	color: #000;
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
 }
 
 a {
-	color: rgb(0, 100, 200);
+	color: var(--link-color);
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0, 80, 160);
 }
 
 label {
@@ -94,11 +95,13 @@ button:focus {
 main {
 	width: 8.5in;
 	height: 11in;
-	padding: 3em 4em;
-	margin: 0 auto;
+	padding: 2em 4em;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: var(--grey-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,28 +113,25 @@ ul {
 	padding-left: 19px;
 }
 
-i {
-	padding-right: 7px;
-	font-size: 0.9rem;
-  color: var(--grey-mid);
-}
-
 hr.section-underline {
-	margin: 0 0 18px 0;
-	color: var(--grey-mid);
+	margin: -1px 0 var(--vertical-space-between-subsections) 0;
 }
 
 .section {
-  margin-bottom: 36px;
+	margin-bottom: var(--vertical-space-between-sections);
+}
+
+.section:last-child {
+	margin-bottom: 0;
 }
 
 .section-label {
   margin-bottom: 0;
   color: var(--accent-color);
 	font-family: var(--accent-font);
-	font-size: 1.9em; 
+	font-size: 1.85em;
 	text-transform: uppercase;
-	text-align: var(--center);
+	text-align: var(--more-centered);
 }
 
 .title {
@@ -139,17 +139,16 @@ hr.section-underline {
 }
 
 .subtitle {
-	color: var(--grey-mid-dark);
 	font-weight: 800;
 }
 
 #small-column {
-	text-align: var(--center);
+	text-align: var(--more-centered);
 }
 
 .detail-container {
 	line-height: 1.4em;
-	margin: 24px 0;
+	margin-bottom: var(--vertical-space-between-subsections);
 }
 
 .detail-container:first-of-type {
@@ -161,18 +160,15 @@ hr.section-underline {
 	margin-bottom: 3px;
 }
 
-.link {
-	font-size: 0.9em;
-	color: var(--grey-mid);
-	margin-top: 3px;
-}
-
 .title {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 5px;
 	font-family: var(--accent-font);
-	color: var(--grey-dark);
+}
+
+.subtitle {
+	font-family: var(--accent-font);
 }
 
 .location {
@@ -184,7 +180,7 @@ hr.section-underline {
 }
 
 .description {
-	font-size: 1em;
+	font-size: 1.02em;
 }
 
 .list {
@@ -193,4 +189,8 @@ hr.section-underline {
 
 .list-item {
 	margin-bottom: 4px;
+}
+
+.detail-container a {
+	font-size: 0.9em;
 }

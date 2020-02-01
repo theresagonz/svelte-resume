@@ -97,7 +97,7 @@
 	export const largeColumnSections = [
 		{
 			type: 'full-details',
-			label: 'Work Experience',
+			label: 'Experience',
 			details: [
 				{
 					title: 'Contract Full Stack Developer',
@@ -162,7 +162,7 @@
 	div {
 		display: flex;
 		justify-content: space-between;
-		flex-direction: var(--row-reverse);
+		flex-direction: var(--column-order);
 		margin: 0 var(--horizontal-offset);
 	}
 </style>

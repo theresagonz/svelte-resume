@@ -6,11 +6,11 @@
 	.skill {
     border: 1px solid var(--grey-light);
     width: fit-content;
-    padding: 5px 7px;
-    border-radius: 2px;
+    padding: 5px 4.5px;
+    border-radius: 3px;
     margin: 5px;
-    color: var(--grey-dark);
-    font-weight: 500;
+    font-size: 0.97em;
+    font-weight: 400;
 	}
 </style>
 

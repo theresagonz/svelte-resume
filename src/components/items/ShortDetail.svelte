@@ -14,7 +14,7 @@
 <style>
 	.top {
 		flex-direction: column;
-		align-items: var(--center);
+		align-items: var(--more-centered);
 		margin-bottom: 3px;
   }
   
