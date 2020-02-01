@@ -1,4 +1,5 @@
 <script>
+	import ContactItem from './ContactItem.svelte';
 	export let title;
 	export let subtitle;
 	export let link;
@@ -6,6 +7,8 @@
 	export let location;
 	export let description;
 	export let list;
+	let linkDetail = { text: link };
+	let locationDetail = { text: location, icon: 'location' };
 </script>
 
 <style>
@@ -34,9 +37,7 @@
 			<h3 class="title">{title}</h3>
 			<div class="subtitle">{subtitle}</div>
 			{#if link}
-				<div class="link">
-					<i class="fa fa-link"></i><a href="{link}">{link}<a>
-				</div>
+				<ContactItem detail={linkDetail} />
 			{/if}
 		</div>
 		<div class="top-right">
@@ -44,9 +45,7 @@
 				<div class="dates">{dates}</div>
 			{/if}
 			{#if location}
-				<div class="location">
-					<i class="fa fa-map-marker-alt"></i>{location}
-				</div>
+				<ContactItem detail={locationDetail} />
 			{/if}
 		</div>
 	</div>
@@ -57,7 +56,7 @@
 		{#if list}
 			<ul class="list">
 				{#each list as listItem}
-				<li class="list-item">{listItem}</li>
+					<li class="list-item">{listItem}</li>
 				{/each}
 			</ul>
 		{/if}

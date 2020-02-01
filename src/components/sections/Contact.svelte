@@ -1,50 +1,41 @@
 <script>
+	import ContactItem from '../items/ContactItem.svelte';
 	export let details;
 </script>
 
 <style>
 	#contact-section {
-		line-height: 2em;
+		margin-top: 20px; /* align baseline with adjacent component text */
+	}
+
+	.contact-subsection {
+		margin-top: var(--vertical-space-between-subsections);
+	}
+
+	.contact-subhead {
+		font-family: var(--accent-font);
+		font-size: 1.1em;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.contact-items {
+		margin: 3px 0 0 12px;
+		line-height: 1.7em;
 	}
 </style>
 
 <div id="contact-section">
-	{#each details as { phone, email, city, linkedin, web, blog }}
-		{#if email}
-			<div class="contact-item">
-				<i class="fa fa-envelope" />
-				{email}
+	{#each details as { subcategory, contactDetails }}
+		<div class="contact-subsection">
+			{#if subcategory}
+				<div class="contact-subhead">{subcategory}</div>
+			{/if}
+			<div class="contact-items">
+				{#each contactDetails as detail}
+					<ContactItem {detail} />
+				{/each}
 			</div>
-		{/if}
-		{#if phone}
-			<div class="contact-item">
-				<i class="fa fa-phone-alt" />
-				{phone}
-			</div>
-		{/if}
-		{#if city}
-			<div class="contact-item">
-				<i class="fa fa-map-marker-alt" />
-				{city}
-			</div>
-		{/if}
-		{#if web}
-		<div class="contact-item">
-			<i class="fa fa-link" />
-			<a href="https://{web}">{web}</a>
 		</div>
-		{/if}
-		{#if blog}
-		<div class="contact-item">
-			<i class="fa fa-pencil-alt" />
-			<a href="https://{blog}">{blog}</a>
-		</div>
-		{/if}
-		{#if linkedin}
-			<div class="contact-item">
-				<i class="fab fa-linkedin-in" />
-				<a href="https://{linkedin}">{linkedin}</a>
-			</div>
-		{/if}
-		{/each}
+	{/each}
 </div>
