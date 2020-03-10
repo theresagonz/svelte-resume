@@ -34,17 +34,20 @@
 						{
 							isLink: true,
 							type: 'web',
+							url: 'bit.ly/2vJ0owX',
 							text: 'theresamorelli.com',
 						},
 						{
 							isLink: true,
 							type: 'web',
+							url: 'bit.ly/2Q0GoMV',
 							text: 'github.com/theresamorelli',
 							icon: 'github',
 						},
 						{
 							isLink: true,
 							type: 'web',
+							url: 'bit.ly/2xjOx8M',
 							text: 'linkedin.com/in/theresa-morelli',
 							icon: 'linkedin',
 						},
@@ -59,15 +62,14 @@
 				'JavaScript',
 				'ES6',
 				'React',
+				'NodeJS',
 				'Redux',
 				'MobX',
+				// 'Express',
+				'Ruby on Rails',
 				'PostgreSQL',
 				'MongoDB',
-				'Express',
-				'NodeJS',
-				'Ruby on Rails',
 				'jQuery',
-				'WordPress',
 				'HTML',
 				'CSS',
 				'Git',
@@ -82,15 +84,24 @@
 			details: [
 				{
 					title: 'Hello Pizza Truck',
+					url: 'http://bit.ly/2VXTVJ3',
 					link: 'hellopizzatruck.com',
-					subtitle: 'Website for selling food truck',
-					description: 'Gatsby, React, Slick',
+					description:
+						'Static site for selling food truck. Built with Gatsby, React hooks, and Slick carousel.',
 				},
 				{
 					title: 'Newsmash',
+					url: 'http://bit.ly/2Ix2sKW',
 					link: 'newsmashed.herokuapp.com',
-					subtitle: 'See the news differently',
-					description: 'React, Redux, PostgreSQL, Ruby on Rails',
+					description:
+						'Data visualization for the news. Integrated three external APIs with React/Redux app and PostgreSQL.',
+				},
+				{
+					title: 'Svelte Resume',
+					url: 'bit.ly/38E1FCO',
+					link: 'bit.ly/svelte-resume',
+					description:
+						'Flexible and customizable PDF resume template built with Svelte.',
 				},
 			],
 		},
@@ -107,9 +118,13 @@
 					location: 'Remote',
 					description: 'Reusable packaging grocery delivery service',
 					list: [
-						'Update and add new features to customer-facing e-commerce app using React, MobX, MaterialUI, Slick, and other external libraries.',
-						'Implement MongoDB API endpoints and update schemas.',
-						'Automate process to batch email PDFs after generating from graphics file.',
+						'Update and add new features to customer-facing e-commerce app using React with MobX and Bootstrap.',
+						'Implement NodeJS API endpoints using MongoDB queries.',
+						'Execute miscellaneous technical projects such as auto-generating unique PDFs from a graphics file.',
+
+						// 'Implement product rating system to handle both numerical reviews and comments',
+						// Use React.js to add prompts and visual cues for shoppers to update product and inventory information.
+						// Contracted to develop tech stack focused on MongoDB, Express.js, React, Node.js.
 					],
 				},
 				{
@@ -119,24 +134,48 @@
 					location: 'Brooklyn, NY',
 					description: 'Endurance coaching software used by Team in Training',
 					list: [
-						'Maintained ownership of the front end of a large web application powered by React, JavaScript, and custom libraries and state management.',
-						'Designed and implemented new features, including message templates and community groups, from InVision prototypes.',
-						'Improved and maintained code health and architecture for components including a message feed, training plan library, and calendar.',
-						'Refactored to improve loading time and added error handling.',
+						'Maintained primary ownership of the front end of a React / JavaScript SaaS web app used by thousands of coaches and athletes daily.',
+						'Built new features, including message templates and public community groups, from InVision prototypes.',
+						'Improved stability through bug fixes and refactoring to reduce tech debt.',
 					],
 				},
 				{
 					title: 'Math Fellow, Americorps',
 					subtitle: 'Denver Public Schools',
-					dates: '8/2017 — 6/2018',
+					dates: '2017 — 2018',
 					location: 'Denver, CO',
-					description: 'Middle school math intervention teacher',
+					description: 'Middle school math intervention program',
 					list: [
-						'Created and taught lesson plans that included original worksheets, games, and activities to stimulate student engagement and meet requirements',
-						'Developed a positive motivation system to encourage on-task behavior, teamwork, and delaying rewards.',
-						'Launched and led HTML coding enrichment class with help from Galvanize students.',
+						'Improved academic outcomes for a diverse student population by creating and teaching lesson plans that included original worksheets and activities.',
+						'Developed a positive motivation system to encourage on-task behavior, teamwork, and delaying of rewards.',
+						'Launched and led HTML coding enrichment class with Galvanize students.',
+						// • Taught small-group 6th grade math intervention, writing and delivering original lessons.
+						// • Managed behavior and relationships with a positive motivation system, restorative conversations, and supplemental tutoring.
+						// • Facilitated an elective with Galvanize where students learned HTML and built websites (deployed and hosted by Galvanize).
 					],
 				},
+				{
+					title: 'Technical Writer',
+					subtitle: 'KBC Advanced Technologies',
+					dates: '2014 — 2015',
+					location: 'Denver, CO',
+					description: 'Oil refinery operations manuals',
+					list: [
+						'Produced high quality training manuals that included written content and Visio drawings, synthesizing information from various sources.',
+					],
+				},
+
+				// Linkedin
+
+					// 'Produced high quality training manuals for oil refinery operations to communicate how materials move through complex systems.',
+					// 'Wrote clear, concise content with information compiled from client documents, photos, and detailed flow diagrams.'
+					// 'Created Visio drawings of condensed stream and equipment information to assist with visual understanding.',
+
+				// Honeybee Robotics, New York, NY
+				// Operations Associate, 2012–2013
+				// • Controlled project document streams and managed all incoming bills, serving as the main point of contact for vendors.
+				// • Created a macro in Excel VBA to automate entry and processing of expense data.
+				// • Updated and expanded company website and blog using Joomla!
 			],
 		},
 		{
@@ -144,10 +183,11 @@
 			label: 'Education',
 			details: [
 				{
-					title: 'Online Software Engineering Program',
+					title: 'Software Engineering Program',
 					subtitle: 'Flatiron School',
 					dates: '2018 — 2019',
-				},
+					location: 'Remote',
+					},
 				{
 					title: 'B.S. Chemical Engineering',
 					subtitle: 'Colorado School of Mines',

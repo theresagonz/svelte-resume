@@ -6,7 +6,7 @@
 		location: 'fa fa-map-marker-alt',
 		email: 'fa fa-envelope',
 		phone: 'fa fa-phone-alt',
-		github: 'fab fa-github-alt',
+		github: 'fab fa-github',
 		linkedin: 'fab fa-linkedin-in',
 		blog: 'fa fa-pencil-alt',
 	};
@@ -18,8 +18,15 @@
 		width: 20px;
 		padding-right: 5px;
 		font-size: 0.9rem;
-		color: #000000bf;
 		text-align: center;
+	}
+
+	.full-detail .contact-item i {
+		padding-right: 2px; /*	less padding for experience map marker */
+	}
+
+	.simple-detail .contact-item {
+		margin-top: 5px;
 	}
 </style>
 
