@@ -31,10 +31,10 @@
 	}
 </style>
 
-<div class="detail-container">
+<div class="full-detail detail-container">
 	<div class="top">
 		<div class="top-left">
-			<h3 class="title">{title}</h3>
+			<div class="title">{title}</div>
 			<div class="subtitle">{subtitle}</div>
 			{#if link}
 				<ContactItem detail={linkDetail} />

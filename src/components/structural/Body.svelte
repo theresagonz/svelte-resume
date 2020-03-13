@@ -8,18 +8,18 @@
 			label: 'Contact',
 			details: [
 				{
-					subcategory: 'Say hello',
+					subcategory: 'Say hi',
 					contactDetails: [
 						{
 							isLink: true,
 							type: 'email',
-							text: 'test@gmail.com',
+							text: 'theresa.l.morelli@gmail.com',
 							icon: 'email',
 						},
 						{
 							isLink: true,
 							type: 'phone',
-							text: '555-555-5555',
+							text: '303-909-1445',
 							icon: 'phone',
 						},
 						{
@@ -63,19 +63,19 @@
 				'ES6',
 				'React',
 				'NodeJS',
-				'Redux',
 				'MobX',
-				// 'Express',
+				'Redux',
 				'Ruby on Rails',
-				'PostgreSQL',
 				'MongoDB',
+				'PostgreSQL',
 				'jQuery',
+				// 'Express',
 				'HTML',
 				'CSS',
 				'Git',
 				'Bootstrap',
-				'Agile',
-				'Jira',
+				// 'Agile',
+				// 'Jira',
 			],
 		},
 		{
@@ -135,7 +135,7 @@
 					description: 'Endurance coaching software used by Team in Training',
 					list: [
 						'Maintained primary ownership of the front end of a React / JavaScript SaaS web app used by thousands of coaches and athletes daily.',
-						'Built new features, including message templates and public community groups, from InVision prototypes.',
+						'Implemented new features from InVision prototypes, including message templates and public community groups.',
 						'Improved stability through bug fixes and refactoring to reduce tech debt.',
 					],
 				},
@@ -187,7 +187,7 @@
 					subtitle: 'Flatiron School',
 					dates: '2018 — 2019',
 					location: 'Remote',
-					},
+				},
 				{
 					title: 'B.S. Chemical Engineering',
 					subtitle: 'Colorado School of Mines',

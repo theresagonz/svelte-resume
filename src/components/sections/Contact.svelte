@@ -5,7 +5,7 @@
 
 <style>
 	#contact-section {
-		margin-top: 20px; /* align baseline with adjacent component text */
+		margin-top: 14px; /* align baseline with adjacent component text */
 	}
 
 	.contact-subsection {

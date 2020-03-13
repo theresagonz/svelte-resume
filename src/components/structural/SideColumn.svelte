@@ -11,7 +11,7 @@
 
 <style>
 	#side-column {
-		width: 35%;
+		width: calc(100% - var(--main-column-width));
 		margin: 0 var(--horizontal-space-between-columns);
 		text-align: var(--more-centered);
 		display: flex;

@@ -3,15 +3,15 @@
 	export let sections;
 </script>
 
-<div id="wide-column">
+<div id="main-column">
 	{#each sections as { label, details, type }}
     <Section {label} {details} {type}></Section>
 	{/each}
 </div>
 
 <style>
-	#wide-column {
-		width: 65%;
+	#main-column {
+		width: var(--main-column-width);
 		margin: 0 var(--horizontal-space-between-columns);
 		display: flex;
 		flex-direction: column;
