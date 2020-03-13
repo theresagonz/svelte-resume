@@ -3,16 +3,17 @@
 	export let sections;
 </script>
 
-<div id="small-column">
+<div id="side-column">
 	{#each sections as { label, details, type }}
 		<Section {label} {details} {type}></Section>
 	{/each}
 </div>
 
 <style>
-	#small-column {
-		width: 35%;
-		margin: 0 25px;
+	#side-column {
+		width: calc(100% - var(--main-column-width));
+		margin: 0 var(--horizontal-space-between-columns);
+		text-align: var(--more-centered);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;

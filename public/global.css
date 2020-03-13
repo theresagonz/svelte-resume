@@ -1,32 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500|Open+Sans:300,400,500&display=swap');
 
-/* MY GLOBAL VARIABLES */
+/* MY GLOBAL CSS VARIABLES */
 
 :root {
-  /* --accent-color: #55777c; */
-	--accent-color: #000;
-	--link-color: #55777c;
-  --accent-font: 'Open Sans', sans-serif;
-  --grey-dark: #333;
-  --grey-mid-dark: #545454;
+	/* ADJUST COLOR */
+	/* --accent-color: #55777c; */
+	--link-color: #959595;
+	--accent-font: 'Open Sans', sans-serif;
+	--grey-dark: #333;
+	--grey-mid-dark: #545454;
 	--grey-mid: #717171;
 	--grey-light: #d5d5d5;
-	/* TOGGLE - for more centered layout, comment in --center css variable below */
-	/* --center: center; */
-}
 
+	/* ADJUST SPACING */
+	--main-column-width: 65%;
+	--vertical-space-between-sections: 0.8rem;
+	--vertical-space-between-subsections: 0.7rem;
+	--horizontal-space-between-columns: 25px;
+	--horizontal-offset: -25px;
+	--list-line-height: 1.3em;
+
+	/* ADJUST APPEARANCE */
+	/* --column-order: row-reverse; */
+	/* --more-centered: center; */
+}
 
 
 /* DEFAULT GLOBAL STYLES */
 
-html, body {
+html,
+body {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
 body {
-	color: #333;
+	color: #000;
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
@@ -35,23 +45,18 @@ body {
 }
 
 a {
-	color: rgb(0, 100, 200);
+	color: var(--link-color);
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0, 80, 160);
 }
 
 label {
 	display: block;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
 	font-family: inherit;
 	font-size: inherit;
 	padding: 0.4em;
@@ -87,21 +92,25 @@ button:focus {
 	border-color: #666;
 }
 
-
-
 /* MY GLOBAL STYLES */
 
 main {
 	width: 8.5in;
 	height: 11in;
-	padding: 3em 4em;
-	margin: 0 auto;
+	padding: 2.3rem 3.75rem;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: var(--grey-dark);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 5px 0;
 }
 
@@ -110,50 +119,49 @@ ul {
 	padding-left: 19px;
 }
 
-i {
-	padding-right: 7px;
-	font-size: 0.9rem;
-  color: var(--grey-mid);
-}
-
 hr.section-underline {
-	margin: 0 0 18px 0;
-	color: var(--grey-mid);
+	margin: -1px 0 var(--vertical-space-between-subsections) 0;
 }
 
 .section {
-  margin-bottom: 36px;
+	margin-bottom: var(--vertical-space-between-sections);
+}
+
+.section:last-child {
+	margin-bottom: 0;
 }
 
 .section-label {
-  margin-bottom: 0;
-  color: var(--accent-color);
+	margin-bottom: 0;
+	color: var(--accent-color);
 	font-family: var(--accent-font);
-	font-size: 1.9em; 
+	font-size: 1.85em;
 	text-transform: uppercase;
-	text-align: var(--center);
+	text-align: var(--more-centered);
 }
 
 .title {
+	display: flex;
+	font-family: var(--accent-font);
 	font-size: 1.3em;
+	font-weight: 500;
+	justify-content: space-between;
 }
 
 .subtitle {
-	color: var(--grey-mid-dark);
-	font-weight: 800;
-}
-
-#small-column {
-	text-align: var(--center);
+	font-weight: 500;
 }
 
 .detail-container {
-	line-height: 1.4em;
-	margin: 24px 0;
+	margin-bottom: var(--vertical-space-between-subsections);
 }
 
 .detail-container:first-of-type {
 	margin-top: 0;
+}
+
+#main-column .detail-container:last-child {
+	margin-bottom: 0;
 }
 
 .top {
@@ -161,18 +169,20 @@ hr.section-underline {
 	margin-bottom: 3px;
 }
 
-.link {
-	font-size: 0.9em;
-	color: var(--grey-mid);
-	margin-top: 3px;
+.top-right {
+	line-height: 1.44rem;
 }
 
-.title {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 5px;
-	font-family: var(--accent-font);
+.top-right .contact-item i {
+	padding-right: 3px;
+} 
+
+i {
 	color: var(--grey-dark);
+}
+
+.subtitle {
+	font-family: var(--accent-font);
 }
 
 .location {
@@ -184,13 +194,18 @@ hr.section-underline {
 }
 
 .description {
-	font-size: 1em;
+	font-size: 1.02em;
 }
 
 .list {
-	line-height: 1.3em;
+	line-height: var(--list-line-height);
+	margin: 7px 0;
 }
 
 .list-item {
 	margin-bottom: 4px;
+}
+
+.detail-container a {
+	font-size: 0.9em;
 }
