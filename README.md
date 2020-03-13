@@ -1,12 +1,11 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Svelte Resume
 
----
+Flexible, customizable template for creating a printed pdf resume.
 
-# svelte app
+Built with [Svelte](https://svelte.dev). Design inspired by [enhancv](https://enhancv.com/).
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Created with a Svelte [project template](https://github.com/sveltejs/template).
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
 npx degit sveltejs/template svelte-app
@@ -18,10 +17,17 @@ cd svelte-app
 
 ## Get started
 
+Clone to your local computer using
+
+```bash
+git clone https://github.com/theresamorelli/svelte-resume.git
+```
+
+
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd svelte-resume
 npm install
 ```
 
@@ -31,10 +37,25 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). You should see the app running! Edit a component file in `src`, save it, and reload the page to see your changes.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
+## Using Svelte Resume
+
+Get started by replacing the dummy data with your info! Name and summary go in Header.svelte, and everything else goes in Body.svelte (both located in src/components/structural).
+
+Adjust the appearance and fit your unique content by changing global css variables for color, spacing, and other appearance items. These are located in the :root selector at the top of global.css (example: --link-color). This particular configuration is designed to adapt to different content and maintain alignment.
+
+Just a note: the particular settings optimize for my current version of Google Chrome (80.0.3987.132) with 8.5 x 11"-size PDF and Print Settings margins set to 'none'. Might look funky with other browsers or settings.
+
+Preview how your resume will look in the browser with Print Preview. Create a PDF using your computer's [print to PDF](https://acrobat.adobe.com/us/en/acrobat/how-to/print-to-pdf.html) functionality.
+
+Change styles and add your own components based on your resume's specific needs!
+
+# Production Mode
+
+Should you need to host on the web:
 
 ## Building and running in production mode
 
