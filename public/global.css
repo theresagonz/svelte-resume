@@ -14,7 +14,9 @@
 
 	/* ADJUST SPACING */
 	--main-column-width: 65%;
-	--vertical-space-between-sections: 0.8rem;
+	--top-bottom-padding: 2rem;
+	--left-right-padding: 3.75rem;
+	--vertical-space-between-sections: 0.9rem;
 	--vertical-space-between-subsections: 0.7rem;
 	--horizontal-space-between-columns: 25px;
 	--horizontal-offset: -25px;
@@ -97,7 +99,7 @@ button:focus {
 main {
 	width: 8.5in;
 	height: 11in;
-	padding: 2.3rem 3.75rem;
+	padding: var(--top-bottom-padding) var(--left-right-padding);
 	margin: 0;
 	display: flex;
 	flex-direction: column;

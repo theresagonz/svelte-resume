@@ -84,14 +84,14 @@
 			details: [
 				{
 					title: 'Hello Pizza Truck',
-					url: 'http://bit.ly/2VXTVJ3',
+					url: 'bit.ly/2VXTVJ3',
 					link: 'hellopizzatruck.com',
 					description:
 						'Static site for selling food truck. Built with Gatsby, React hooks, and Slick carousel.',
 				},
 				{
 					title: 'Newsmash',
-					url: 'http://bit.ly/2Ix2sKW',
+					url: 'bit.ly/2Ix2sKW',
 					link: 'newsmashed.herokuapp.com',
 					description:
 						'Data visualization for the news. Integrated three external APIs with React/Redux app and PostgreSQL.',
